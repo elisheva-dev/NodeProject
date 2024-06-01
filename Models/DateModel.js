@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const DateSchema = mongoose.Schema({
     date: {
-    type: DateTime,
+    type: Date,
     required: true
   },
   appearance:String

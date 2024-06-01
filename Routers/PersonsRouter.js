@@ -5,8 +5,8 @@ const PersonsRouter = express.Router();
 
 PersonsRouter.get("/", PersonsController.getList);
 PersonsRouter.get("/:id", PersonsController.getById);
-PersonsRouter.post("/", PersonsController.addPerson);
-PersonsRouter.put("/:id", PersonsController.editPerson);
-PersonsRouter.delete("/:id", PersonsController.deletePerson);
+PersonsRouter.post("/", PersonsController.add);
+PersonsRouter.put("/:id", PersonsController.update);
+PersonsRouter.delete("/:id", PersonsController.delete);
 
 export default PersonsRouter;

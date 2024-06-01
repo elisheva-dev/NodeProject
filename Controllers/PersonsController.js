@@ -1,6 +1,6 @@
-import PersonModel from "../Models/PersonModel";
-const PersonsController = {
+import PersonModel from "../Models/PersonModel.js"
 
+const PersonsController = {
     getList: async (req, res) => {
         try {
           const persons = await PersonModel.find();//ללא סינון
@@ -32,7 +32,7 @@ const PersonsController = {
       update: async (req, res) => {
         const { id } = req.params;
         try {
-          const upPersondPerson = await PersonModel.findByIdAndUpPerson(id, req.body, {
+          const upPersondPerson = await PersonModel.findByIdAndUpdate(id, req.body, {
             new: true,
           });//עדכון לפי מזהה
           res.json(upPersondPerson);

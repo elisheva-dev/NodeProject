@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import RoomModel from "./RoomModel";
+import RoomModel from "./RoomModel.js";
 
 const PersonSchema = mongoose.Schema({
     IDNumber: {
@@ -8,9 +8,9 @@ const PersonSchema = mongoose.Schema({
   },
   name: String,
   NumPhone:Number,
-  date:DateTime,
+  date:Date,
   roomId:Number,
-  room:RoomModel
+  // room:RoomModel
 });
 
 export default mongoose.model("persons", PersonSchema);

@@ -1,4 +1,5 @@
-import RoomModel from "../Models/RoomModel";
+// import RoomModel from "../Models/RoomModel";
+import RoomModel from "../Models/RoomModel.js"
 
 const RoomsController = {
   getList: async (req, res) => {

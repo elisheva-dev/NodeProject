@@ -1,4 +1,4 @@
-import DateModel from "../Models/DateModel";
+import DateModel from "../Models/DateModel.js"
 const DatesController = {
 
     getList: async (req, res) => {
